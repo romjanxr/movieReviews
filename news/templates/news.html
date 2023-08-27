@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for n in news %}
+<div class="p-3 border rounded shadow-lg mb-4">
+    <h1>{{n.headline}}</h1>
+    <h5>{{n.date}}</h5>
+    <p>{{n.body}}</p>
+</div>
+{% endfor %}
+{% endblock content %}
